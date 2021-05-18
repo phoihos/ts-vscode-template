@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "files.exclude": {
+    // Change "out" to "dist" or "lib" when tsconfig outDir is "dist" or "lib"
+    "out": false // Set this to true to hide the "out" folder with the compiled JS files
+  },
+  "search.exclude": {
+    // Change "out" to "dist" or "lib" when tsconfig outDir is "dist" or "lib"
+    "out": true // Set this to false to include "out" folder in search results
+  },
+  // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+  "typescript.tsc.autoDetect": "off",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  //#region For Prettier extension
+  "prettier.enable": true,
+  "prettier.requireConfig": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.defaultFormatter": null
+  }
+  //#region
+}
